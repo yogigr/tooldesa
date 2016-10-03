@@ -1,0 +1,309 @@
+@import url('assets/bootstrap/css/bootstrap.min.css');
+@import url('assets/font-awesome/css/font-awesome.min.css');
+
+/* font */
+@font-face {
+    font-family: 'myFirstFont'; /*normal*/
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'mySecondFont'; /*bold*/
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+body {
+	font-family: 'Helvetica' !important;
+	
+}
+textarea[name=alamat] {
+    resize: none;
+}
+.clear {
+	clear: both;
+}
+
+.link-th {
+	color: #333;
+}
+.link-th:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+
+/* login page */
+#login-container {
+	background-image: url('assets/images/login-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 100vh; /* These two lines are counted as one :-)       */
+  	display: flex;
+  	align-items: center;
+}
+#login-form {
+	padding: 0px;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.8);
+-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.8);
+box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.8);
+}
+#login-form-header {
+	margin: 0px;
+	background-color: #0e1a35;
+	color: #fff;
+	padding:20px 10px 20px 10px ;
+}
+#login-form-header h4 {
+	margin: 0px;
+}
+#login-form-content {
+	background-color: #fff;
+	margin: 0px;
+}
+.input-group-custom {
+	border-bottom: 1px dotted #0e1a35;
+	margin-top: 20px;
+}
+.custom-input {
+	border:none;
+}
+.custom-input:focus {
+	outline: none;
+}
+.btn-login {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #337ab7;
+	color: #fff;
+}
+.btn-login:hover {
+	background-color:#0e1a35;
+	color: #fff; 
+}
+.muda {
+	color: #337ab7;
+}
+/* /login page */
+
+/*sidebar*/
+#container {
+	padding: 0px;
+	background-color: #f6f7fa;
+}
+#sidebar {
+	background-color: #0e1a35;
+	color: #fff;
+	padding: 0px;
+	min-height:800px;
+}
+#sidebar a {
+	color: #fff;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	text-decoration: none;
+}
+#sidebar-header {
+	padding: 10px;
+	border-bottom: 1px solid #091225;
+}
+#sidebar-menu {
+	padding: 0px;
+}
+.each-menu {
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-bottom:30px;
+	font-weight:bold;
+	font-size: 12px;
+	border-bottom: 1px solid #091225
+}
+.each-menu:hover{
+	background-color:#263049;
+	border-left: 5px solid #5584ff;
+}
+
+/* content */
+#content {
+	
+	padding: 0px;
+        
+}
+#content-header {
+	background-color: #fff;
+	padding: 0px;
+	border-bottom: 1px solid #8492af;
+	font-weight:bold;
+}
+#content-header h4 {
+	padding-top: 28.5px;
+	padding-bottom: 28.5px;
+	margin: 0px;
+	color: #0e1a35
+}
+#content-header a {
+	color: #337ab7;
+	text-decoration: none;
+}
+#content-header p {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-right: 20px;
+	padding-left: 15px;
+	margin: 0px;
+	color: #0e1a35;
+}
+#content-content {
+	padding: 15px;
+        font-size: 12px;
+}
+#custom-component{
+	padding-top: 10px;
+	padding-bottom:10px;
+	background-color:#0e1a35;
+}
+#form-cari div {
+	margin-bottom: 0px;
+}
+.custom-input-form, .input-group {
+	margin-bottom: 5px;
+}
+#custom-form {
+	padding:0px;
+	border: 1px solid #ccc;
+}
+#custom-form-header {
+	background-color: #0e1a35;
+	color: #fff;
+	font-weight:bold;
+}
+#custom-form-content{
+	padding: 15px;
+	background-color: #fff;
+}
+#custom-table {
+	
+	border:1px solid #ccc;
+}
+#custom-table-header {
+	background-color: #0e1a35;
+	color:#fff;
+	font-weight:bold;
+}
+
+/*tabel*/
+.table-aing {
+	background-color:#fff;
+}
+.table-aing th{
+    background-color:#ccc;
+    color: #333;
+}
+
+/* navigasi halaman */
+#navigasi-page {
+	overflow:flex;
+}
+.nav-a {
+	font-weight:bold;
+	font-size:15px;
+	color:#0e1a35;
+	padding:5px;
+	background-color: #fff;
+	border:1px solid #ccc;
+	border-radius:2px;
+	margin-right:2px;
+}
+.nav-a:hover{
+	text-decoration:none;
+}
+
+/*formulir*/
+#daftar-formulir {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+#daftar-formulir-header {
+    background-color: #0e1a35;
+}
+#daftar-formulir-header h4 {
+    color:#fff;
+}
+#each-formulir {
+    padding: 10px;
+    border: 1px solid #d9534f;
+    background-color: #f0ad4e;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+#each-formulir:hover {
+    text-decoration: none;
+    background-color: #337ab7;
+    border: 1px solid #337ab7;
+}
+.halfsize {
+    width: 49%;
+    float: left;
+    margin-right: 5px;
+}
+.triplesize {
+    width: 32%;
+    float:left;
+    margin-left: 5px;
+}
+
+/* pbb desa */
+#pbbdesa-header{
+	background-color: #0e1a35;
+	padding: 0px;
+	border: none;
+}
+
+#pbbdesa-subheader {
+	padding: 20px;
+	background: #6e7585;
+}
+.tebel {
+	font-weight: bold;
+}
+#pbbdesa-content {
+	padding: 20px 25px 20px 25px;
+	background-color: #fff;
+	border: 1px solid #6e7585 ;
+}
+.link-saya {
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.link-saya:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+#link-laporan {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+#link-laporan:hover {
+	color: #ccc;
+}
+
+/* laporan */
+.link-tab-print {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #6e7585;
+	color: #fff;
+	
+}
+.link-tab-print:hover {
+	text-decoration: none;
+	color: #000;
+}
