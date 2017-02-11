@@ -1,6 +1,7 @@
 <?php  
 
 require_once("assets/fpdf/fpdf.php");
+require_once('library/formulir/kumpulan_fungsi.php');
 #bayi
 $id_bayi = @$_GET['id_bayi'];
 $koneksi = db_connect();
@@ -692,7 +693,7 @@ $pdf->Line(20.58, 24.5, 20.58, 27.7); # kanan
 
 # tanda tangan
 $pdf->setY(28.5);
-$pdf->cell(0, 0.35, "........................, ........................20............", 0, 0, "R");
+$pdf->cell(0, 0.35, "Rajagaluhlor, ".tanggalTitimangsa(date('d'), date('m'), date('Y')), 0, 0, "R");
 $pdf->setY(29);
 $pdf->cell(0, 0.35, "Mengetahui :");
 $pdf->setY(29.5);
@@ -700,7 +701,7 @@ $pdf->cell(5, 0.35, "Kepala Desa/Lurah", 0, 0, "C");
 $pdf->setX(15);
 $pdf->cell(5, 0.35, "Pelapor", 0, 0, "C");
 $pdf->setY(30.64);
-$pdf->cell(5, 0.35, "(..................................................)", 0, 0, "C");
+$pdf->cell(5, 0.35, "(   H. R I S A N   )", 0, 0, "C");
 $pdf->setX(15);
 $pdf->cell(5, 0.35, "(..................................................)", 0, 0, "C");
 

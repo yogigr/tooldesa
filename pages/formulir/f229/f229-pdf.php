@@ -1,6 +1,7 @@
 <?php  
 
 require_once("assets/fpdf/fpdf.php");
+require_once('library/formulir/kumpulan_fungsi.php');
 #jenazah
 $id_jenazah = @$_GET['id_jenazah'];
 $koneksi = db_connect();
@@ -714,11 +715,11 @@ $pdf->Line(1, 28.5, 20.58, 28.5); # bawah
 
 # tanda tangan
 $pdf->setXY(17, 28.8);
-$pdf->cell(2, 0.35, "..........................., ...............................20..........", 0, 0, "C");
+$pdf->cell(2, 0.35, "Rajagaluhlor, ".tanggalTitimangsa(date('d'), date('m'), date('Y')), 0, 0, "C");
 $pdf->SetXY(17, 29.15);
 $pdf->cell(2, 0.35, "Kepala Desa / Lurah", 0, 0, "C");
 $pdf->setXY(17, 30.5);
-$pdf->cell(2, 0.35, "(.........................................................)", 0, 0, "C");
+$pdf->cell(2, 0.35, "(   H. R I S A N    )", 0, 0, "C");
 
 $pdf->output('I', strtoupper($jenazah['nama_jenazah']).".pdf");
 $koneksi->close();

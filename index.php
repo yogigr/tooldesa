@@ -10,7 +10,7 @@ if(!isset($_SESSION['loggedin'])){
 	$username = @$_POST['username'];
 	$password = @$_POST['password'];
 
-	if(($username == "")&&($password == "")){
+	if(($username == "kasipem")&&($password == "rajagaluhlor")){
 		$_SESSION['loggedin'] = 1;
 		include "loader.php";
 	} else {

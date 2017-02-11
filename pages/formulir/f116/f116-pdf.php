@@ -1,6 +1,7 @@
 <?php
 
 require_once('assets/fpdf/fpdf.php');
+require_once('library/formulir/kumpulan_fungsi.php');
 
 $nik_pemohon = $_GET['nik_pemohon'];
 
@@ -481,7 +482,7 @@ $pdf->setFont('Arial', '', 8);
 $pdf->setXY(1.2, 26);
 $pdf->cell(10, 0, "Mengetahui,", 0, 0, 'C');
 $pdf->setX(11.2);
-$pdf->cell(10, 0, "..........................., .............................................", 0, 0, 'C');
+$pdf->cell(10, 0, "Rajagaluhlor, ".tanggalTitimangsa(date('d'), date('m'), date('Y')), 0, 0, 'C');
 $pdf->setXY(11.2, 26.3);
 $pdf->cell(10, 0, "Pemohon,", 0, 0, 'C');
 $pdf->setXY(11.2, 28);
@@ -493,7 +494,9 @@ $pdf->cell(5, 0, "Kepala Desa / Lurah", 0, 0, "C");
 $pdf->setXY(1.2, 28.3);
 $pdf->cell(5, 0, "....................................................", 0, 0, "C");
 $pdf->setX(6.2);
-$pdf->cell(5, 0, "....................................................", 0, 0, "C");
+$pdf->setFont('Arial', 'B', 8);
+$pdf->cell(5, 0, "H. R I S A N", 0, 0, "C");
+$pdf->setFont('Arial', '', 8);
 $pdf->setXY(1.2, 29);
 $pdf->cell(5, 0, "NIP ............................................", 0, 0, "C");
 $pdf->setX(6.2);

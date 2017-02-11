@@ -1,6 +1,7 @@
 <?php
 
 require_once("assets/fpdf/fpdf.php");
+require_once('library/formulir/kumpulan_fungsi.php');
 
 $no_form = $_GET['no_form'];
 
@@ -455,7 +456,7 @@ while($row = $result->fetch_array()){
 # tanda tangan
 $pdf->setFont("Arial", "", 9);
 $pdf->setXY(1, 27);
-$pdf->cell(0, 0.5, "......................................., .......................................", 0, 1, "R");
+$pdf->cell(0, 0.5, "Rajagaluhlor, ".tanggalTitimangsa(date('d'), date('m'), date('Y')), 0, 1, "R");
 $pdf->setX(2);
 $pdf->cell(5, 0.5, "Petugas Registrasi", 0, 0, "C");
 $pdf->cell(20, 0.5, "Pemohon", 0, 1, "C");
